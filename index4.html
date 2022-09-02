@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocador de Cores</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 600px;
+            height: 100px;
+            background: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .box-btn{
+            padding: 30px;
+        }
+
+        .btn{
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 10px 20px 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover{
+            transition: 0.2s;
+            color: red;
+        }
+
+        .titulo {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body onload="loaded()">
+    <div id="container" class="container">
+        <div id="box" class="box">
+            <h1 id="titulo" class="titulo">Change The Color</h1>
+        </div>
+        <div class="box-btn">
+            <button id="btn-red" class="btn">Click Me for RED</button>
+            <button id="btn-blue" class="btn">Click Me for BLUE</button>
+            <button id="btn-green" class="btn">Click Me for GREEN</button>
+        </div>
+    </div>
+    <script src="script4.js"></script>
+
+</body>
+
+</html>
